@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
+    "jshint": "^2.9.4",
     "jspm": "^0.16.48",
     "node-sass": "^4.1.1"
   }

@@ -1,10 +1,19 @@
-start:
+up: browsersync
+
+browsersync:
 	browser-sync start --server 'src' --files 'src'
 
-bundle:
-	jspm bundle-sfx ./src/app/index.jsx! ./dist/socian-dashboard.js --minify
+bundle-sfx:
+	jspm bundle-sfx ./src/app/index.jsx! ./bundle/app.js --minify
 
-build: bundle
+lint:
+	jshint ./src/app/**.js
+
+copy-index:
+	cp ./src/index.html ./bundle/index.html
+
+copy-assets:
+	cp -r ./src/assets ./bundle/assets
 
 
 
