@@ -5,16 +5,7 @@
 import 'bluebird';
 import PouchDB from 'pouchdb';
 
-let instance = null;
-
 class ContentDbService {
-
-    static instance() {
-        if(! instance) {
-            instance = new ContentDbService();
-        }
-        return instance;
-    }
 
     constructor() {
         this.db = null;
@@ -36,4 +27,7 @@ class ContentDbService {
     }
 }
 
-export default ContentDbService.instance();
+// export a singleton instance
+let instance = null;
+if(! instance) instance = new ContentDbService();
+export default instance;
