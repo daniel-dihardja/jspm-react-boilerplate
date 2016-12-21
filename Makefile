@@ -4,7 +4,7 @@ browsersync:
 	browser-sync start --server 'src' --files 'src'
 
 bundle-sfx:
-	jspm bundle-sfx ./src/components/index.js ./bundle/app.js --minify
+	jspm bundle-sfx ./src/components/app.js ./bundle/app.js --minify
 
 copy-index:
 	cp ./src/index.bundle.html ./bundle/index.html
