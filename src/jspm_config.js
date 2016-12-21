@@ -16,6 +16,7 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "bluebird": "npm:bluebird@3.4.6",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.32",
     "jsx": "npm:jspm-loader-jsx@0.0.7",
@@ -105,6 +106,9 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@5.8.38": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:bluebird@3.4.6": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:bn.js@4.11.6": {

@@ -17,6 +17,3 @@ jshint:
 
 sass:
 	node ./bin/run-sass-worker
-
-
-
