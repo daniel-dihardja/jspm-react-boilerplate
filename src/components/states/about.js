@@ -1,5 +1,5 @@
 import React from 'react';
-import appDbService from '../services/app-db';
+import contentDbService from '../services/content-db';
 
 class About extends React.Component {
 

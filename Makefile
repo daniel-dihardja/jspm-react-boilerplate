@@ -11,4 +11,3 @@ copy-index:
 
 copy-assets:
 	cp -r ./src/assets ./bundle/assets
-
