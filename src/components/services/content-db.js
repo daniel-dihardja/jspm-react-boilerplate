@@ -28,6 +28,5 @@ class ContentDbService {
 }
 
 // export a singleton instance
-let instance = null;
-if(! instance) instance = new ContentDbService();
+const instance = new ContentDbService();
 export default instance;
