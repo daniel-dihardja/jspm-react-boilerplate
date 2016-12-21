@@ -13,7 +13,7 @@ class ContentDbService {
     }
 
     init() {
-        console.log('app db init');
+        console.log('content db init');
         if(this.isReady !== null) {
             return this.isReady;
         }

@@ -12,10 +12,9 @@ class Home extends React.Component {
     componentDidMount() {
         appDbService.init();
         contentDbService.init();
-        contentDbService.sync()
-            .then(function(res) {
-                console.log('synced');
-            })
+        contentDbService.sync().then(function(res) {
+            console.log('synced');
+        })
     }
 
     render() {
