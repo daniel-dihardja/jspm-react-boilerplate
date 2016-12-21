@@ -12,8 +12,3 @@ copy-index:
 copy-assets:
 	cp -r ./src/assets ./bundle/assets
 
-jshint:
-	node ./bin/run-jshint-worker
-
-sass:
-	node ./bin/run-sass-worker
