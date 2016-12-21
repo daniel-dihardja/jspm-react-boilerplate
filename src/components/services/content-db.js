@@ -9,12 +9,17 @@ class ContentDbService {
 
     constructor() {
         this.db = null;
+        this.isReady = null;
     }
 
     init() {
-        console.log('content db init');
+        console.log('app db init');
+        if(this.isReady !== null) {
+            return this.isReady;
+        }
         this.db = new PouchDB('content');
-        return this.db != null;
+        this.isReady = (this.db !== null);
+        return this.isReady;
     }
 
     sync() {

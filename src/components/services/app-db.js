@@ -9,12 +9,17 @@ class AppDbService {
 
     constructor() {
         this.db = null;
+        this.isReady = null;
     }
 
     init() {
         console.log('app db init');
-        this.db = new PouchDB('content');
-        return this.db != null;
+        if(this.isReady !== null) {
+            return this.isReady;
+        }
+        this.db = new PouchDB('app');
+        this.isReady = (this.db !== null);
+        return this.isReady;
     }
 }
 
