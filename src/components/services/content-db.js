@@ -3,16 +3,18 @@
  */
 
 import 'bluebird';
+import PouchDB from 'pouchdb';
 
 class ContentDbService {
 
     constructor() {
-
+        this.db = null;
     }
 
     init() {
         console.log('content db init');
-        return true;
+        this.db = new PouchDB('content');
+        return this.db != null;
     }
 
     sync() {

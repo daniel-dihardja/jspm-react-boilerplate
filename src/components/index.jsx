@@ -5,8 +5,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Home from './states/home.jsx!';
-//import About from './states/about.jsx!';
-//import Contact from './states/contact.jsx!';
+import About from './states/about.jsx!';
+import Contact from './states/contact.jsx!';
 
 class App extends React.Component {
 

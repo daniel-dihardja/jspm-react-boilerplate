@@ -20,6 +20,7 @@ System.config({
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.32",
     "jsx": "npm:jspm-loader-jsx@0.0.7",
+    "pouchdb": "github:pouchdb/pouchdb@6.1.0",
     "react": "npm:react@15.4.1",
     "react-dom": "npm:react-dom@15.4.1",
     "ui-router-react": "npm:ui-router-react@0.3.0",
