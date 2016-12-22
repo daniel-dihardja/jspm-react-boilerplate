@@ -22,7 +22,7 @@ The bundled version can then be integrated in either a cordova or an electron ap
     // start browser sync for development
     make up
     
-    // make a self executable JSPM bundle of the app
+    // make a self executable jspm bundle of the app
     make bundle-sfx
     
     // copy the index.bundle.html into the bundle folder as index.html    
