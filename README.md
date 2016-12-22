@@ -8,8 +8,9 @@ The bundled version of the app can then be integrated in either a cordova or an 
 
 [Onsen UI for React](https://onsen.io/react/)
 
+[Cordova](https://cordova.apache.org/)
 
-
+[Electron](http://electron.atom.io/)
 
 #Setup
 
