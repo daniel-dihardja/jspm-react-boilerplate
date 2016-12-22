@@ -8,17 +8,17 @@ The bundled version of the app can then be integrated in either a cordova or an 
     jspm install
 
 #Workflow
-
-#####Start the development server
+    
+    // start browser sync for development
     make up
-
-#####Bundle app
+    
+    // make a self executable bundle of the app
     make bundle-sfx
     
-#####Copy index    
+    // copy the index.bundle.html into the bundle folder as index.html    
     make copy-index
     
-#####Copy Assets
+    // copy the assets folder into the budle folder
     make copy-assets
     
 #State Components
