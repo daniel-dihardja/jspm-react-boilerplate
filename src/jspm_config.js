@@ -24,7 +24,6 @@ System.config({
     "react": "npm:react@15.4.1",
     "react-dom": "npm:react-dom@15.4.1",
     "react-onsenui": "npm:react-onsenui@1.1.0",
-    "ui-router-react": "npm:ui-router-react@0.3.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -122,9 +121,6 @@ System.config({
     "npm:encoding@0.1.12": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "iconv-lite": "npm:iconv-lite@0.4.15"
-    },
-    "npm:es6-shim@0.35.1": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:fbjs@0.8.8": {
       "core-js": "npm:core-js@1.2.7",
@@ -253,15 +249,6 @@ System.config({
     },
     "npm:ua-parser-js@0.7.12": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
-    },
-    "npm:ui-router-core@1.0.0-beta.2": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:ui-router-react@0.3.0": {
-      "classnames": "npm:classnames@2.2.5",
-      "es6-shim": "npm:es6-shim@0.35.1",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "ui-router-core": "npm:ui-router-core@1.0.0-beta.2"
     },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
