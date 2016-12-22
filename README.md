@@ -1,6 +1,6 @@
 #Introduction
 Boilerplate for developing hybrid or desktop app based on JSPM, React & OnsenUI.
-The bundled version of the app can then be integrated in either a cordova or an electron prject
+The bundled version of the app can then be integrated in either a cordova or an electron prject.
 
 [JSPM](http://jspm.io/)
 
