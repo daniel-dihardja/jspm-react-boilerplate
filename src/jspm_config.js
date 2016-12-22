@@ -19,9 +19,11 @@ System.config({
     "bluebird": "npm:bluebird@3.4.6",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.32",
+    "onsenui": "npm:onsenui@2.0.5",
     "pouchdb": "github:pouchdb/pouchdb@6.1.0",
     "react": "npm:react@15.4.1",
     "react-dom": "npm:react-dom@15.4.1",
+    "react-onsenui": "npm:react-onsenui@1.1.0",
     "ui-router-react": "npm:ui-router-react@0.3.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -124,13 +126,14 @@ System.config({
     "npm:es6-shim@0.35.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:fbjs@0.8.6": {
+    "npm:fbjs@0.8.8": {
       "core-js": "npm:core-js@1.2.7",
       "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
       "loose-envify": "npm:loose-envify@1.3.0",
       "object-assign": "npm:object-assign@4.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "promise": "npm:promise@7.1.1",
+      "setimmediate": "npm:setimmediate@1.0.5",
       "ua-parser-js": "npm:ua-parser-js@0.7.12"
     },
     "npm:https-browserify@0.0.0": {
@@ -168,6 +171,9 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0",
       "zlib": "github:jspm/nodelibs-zlib@0.1.0"
     },
+    "npm:onsenui@2.0.5": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:pako@0.2.9": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -191,14 +197,23 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react-dom@15.4.1": {
-      "fbjs": "npm:fbjs@0.8.6",
+      "fbjs": "npm:fbjs@0.8.8",
       "loose-envify": "npm:loose-envify@1.3.0",
       "object-assign": "npm:object-assign@4.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "react": "npm:react@15.4.1"
     },
+    "npm:react-onsenui@1.1.0": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "module": "github:jspm/nodelibs-module@0.1.0",
+      "onsenui": "npm:onsenui@2.0.5",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.4.1",
+      "react-dom": "npm:react-dom@15.4.1"
+    },
     "npm:react@15.4.1": {
-      "fbjs": "npm:fbjs@0.8.6",
+      "fbjs": "npm:fbjs@0.8.8",
       "loose-envify": "npm:loose-envify@1.3.0",
       "object-assign": "npm:object-assign@4.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -224,6 +239,9 @@ System.config({
       "process-nextick-args": "npm:process-nextick-args@1.0.7",
       "string_decoder": "npm:string_decoder@0.10.31",
       "util-deprecate": "npm:util-deprecate@1.0.2"
+    },
+    "npm:setimmediate@1.0.5": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",

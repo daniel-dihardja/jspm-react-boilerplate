@@ -7,9 +7,11 @@
     "dependencies": {
       "bluebird": "npm:bluebird@^3.4.6",
       "css": "github:systemjs/plugin-css@^0.1.32",
+      "onsenui": "npm:onsenui@^2.0.5",
       "pouchdb": "github:pouchdb/pouchdb@^6.1.0",
       "react": "npm:react@^15.4.1",
       "react-dom": "npm:react-dom@^15.4.1",
+      "react-onsenui": "npm:react-onsenui@^1.1.0",
       "ui-router-react": "npm:ui-router-react@^0.3.0"
     },
     "devDependencies": {
