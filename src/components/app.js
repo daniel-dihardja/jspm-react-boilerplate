@@ -4,55 +4,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './states/home';
-import About from './states/about';
-import Contact from './states/contact';
+import Home from './pages/home';
+import About from './pages/about';
+import Contact from './pages/contact';
 
 import '../jspm_packages/npm/onsenui@2.0.5/css/onsenui.css!';
 import '../jspm_packages/npm/onsenui@2.0.5/css/onsen-css-components.css!';
 
 import ons from 'onsenui';
-import {Navigator, Toolbar, Page, Button, BackButton} from 'react-onsenui';
+import {Navigator, Page} from 'react-onsenui';
 
 class App extends React.Component {
 
     constructor(props) {
         super(props);
+        this.setupPages();
         this.index = 0;
     }
 
-    goBack(navigator) {
-        navigator.popPage();
-    }
-
-    renderToolbar(route, navigator) {
-        const backButton = route.hasBackButton ? <BackButton onClick={this.goBack.bind(this, navigator)}>Back</BackButton> : null;
-        return (
-            <Toolbar>
-                <div className="left">{backButton}</div>
-                <div className="center">{route.title}</div>
-            </Toolbar>
-        );
-    }
-
-    pushPage(navigator) {
-        navigator.pushPage({
-            title: `Another Page ${this.index}`,
-            hasBackButton: true
-        });
-        this.index ++;
+    setupPages() {
+        this.pages = {
+            home: Home,
+            about: About,
+            contact: Contact
+        };
     }
 
     renderPage(route, navigator) {
-        return(
-            <Page key={route.title} renderToolbar={this.renderToolbar.bind(this, route, navigator)}>
-                <section style={{margin: '16px', textAlign: 'center'}}>
-                    <Button onClick={this.pushPage.bind(this, navigator)}>
-                        Push Page
-                    </Button>
-                </section>
-            </Page>
-        );
+        var key = route.nameId + '-' + this.index;
+
+        // wrap the component inside an object.
+        // so it can be used to dynamicly create components via tag
+        var o = {
+            component: this.pages[route.nameId]
+        };
+
+        return <o.component key={key} route={route} navigator={navigator} />;
     }
 
     render() {
@@ -61,7 +48,8 @@ class App extends React.Component {
                 renderPage={this.renderPage.bind(this)}
                 initialRoute={{
                     title: 'First Page',
-                    hasBackButton: false
+                    hasBackButton: false,
+                    nameId: 'home'
                 }}>
             </Navigator>
         );
