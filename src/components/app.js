@@ -47,8 +47,6 @@ class App extends React.Component {
             <Navigator
                 renderPage={this.renderPage.bind(this)}
                 initialRoute={{
-                    title: 'First Page',
-                    hasBackButton: false,
                     nameId: 'home'
                 }}>
             </Navigator>
