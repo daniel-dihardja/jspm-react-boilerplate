@@ -1,8 +1,8 @@
 #Introduction
-Boilerplate for developing hybrid or desktop app based on JSPM, React & OnsenUI.
-The bundled version of the app can then be integrated in either a cordova or an electron prject.
+Boilerplate for developing a hybrid or desktop app based on jspm, React & OnsenUI.
+The bundled version can then be integrated in either a cordova or an electron application.
 
-[JSPM](http://jspm.io/)
+[jspm](http://jspm.io/)
 
 [React](https://facebook.github.io/react/)
 
@@ -22,7 +22,7 @@ The bundled version of the app can then be integrated in either a cordova or an 
     // start browser sync for development
     make up
     
-    // make a self executable JSPM bundle of the app
+    // make a self executable jspm bundle of the app
     make bundle-sfx
     
     // copy the index.bundle.html into the bundle folder as index.html    
