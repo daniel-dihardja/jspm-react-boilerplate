@@ -12,7 +12,7 @@ import '../jspm_packages/npm/onsenui@2.0.5/css/onsenui.css!';
 import '../jspm_packages/npm/onsenui@2.0.5/css/onsen-css-components.css!';
 
 import ons from 'onsenui';
-import {Navigator, Page} from 'react-onsenui';
+import {Navigator} from 'react-onsenui';
 
 class App extends React.Component {
 
@@ -24,19 +24,33 @@ class App extends React.Component {
 
     setupPages() {
         this.pages = {
-            home: Home,
-            about: About,
-            contact: Contact
+            home: {
+                component: Home,
+            },
+            about: {
+                component: About
+            },
+            contact: {
+                component: Contact
+            }
         };
     }
 
     renderPage(route, navigator) {
+
+        var pageObject = this.pages[route.nameId];
         var key = route.nameId + '-' + this.index;
+
+        // fallback
+        if(! pageObject) {
+            pageObject = this.pages['home'];
+            key = 'home-' + this.index;
+        }
 
         // wrap the component inside an object.
         // so it can be used to dynamicly create components via tag
         var o = {
-            component: this.pages[route.nameId]
+            component: pageObject.component
         };
 
         return <o.component key={key} route={route} navigator={navigator} />;
