@@ -25,7 +25,7 @@ class App extends React.Component {
     setupPages() {
         this.pages = {
             home: {
-                component: Home,
+                component: Home
             },
             about: {
                 component: About
@@ -46,6 +46,8 @@ class App extends React.Component {
             pageObject = this.pages['home'];
             key = 'home-' + this.index;
         }
+
+        this.index ++;
 
         // wrap the component inside an object.
         // so it can be used to dynamicly create components via tag
