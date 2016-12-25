@@ -17,6 +17,26 @@ The bundled version can then be integrated in either a cordova or an electron ap
     npm install
     jspm install
 
+####!!! jspm install issue !!!
+After running jspm install make sure to change these lines in the src/jspm_config.js
+ 
+from 
+
+    paths: {
+        "npm:*": "src/jspm_packages/npm/*",
+        "github:*": "src/jspm_packages/github/*"
+      }
+
+into
+
+    paths: {
+        "npm:*": "jspm_packages/npm/*",
+        "github:*": "jspm_packages/github/*"
+      }
+
+jspm keeps overwriting the paths values by adding the 'src/' dir
+
+
 #Workflow
     
     // start browser sync for development
