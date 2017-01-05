@@ -1,6 +1,6 @@
 import React from 'react';
 import AppPage from './app-page';
-import $contentDb from '../services/content-db';
+import {$contentDB} from '../services/content-db';
 import {Toolbar, Page, Button} from 'react-onsenui';
 
 class Home extends AppPage {
@@ -11,8 +11,8 @@ class Home extends AppPage {
     }
 
     componentDidMount() {
-        $contentDb.init();
-        $contentDb.sync().then(function(res) {
+        $contentDB.init();
+        $contentDB.sync().then(function(res) {
             console.log('synced');
         });
     }

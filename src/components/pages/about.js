@@ -1,6 +1,6 @@
 import React from 'react';
 import AppPage from './app-page';
-import contentDbService from '../services/content-db';
+import {$contentDB} from '../services/content-db';
 import {Toolbar, Page, Button, BackButton} from 'react-onsenui';
 
 class About extends AppPage {

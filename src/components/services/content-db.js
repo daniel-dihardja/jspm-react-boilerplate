@@ -28,5 +28,4 @@ class ContentDbService {
 }
 
 // export a singleton instance
-const instance = new ContentDbService();
-export default instance;
+export const $contentDB = new ContentDbService();
