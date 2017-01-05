@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.2",
-    "jspm": "^0.16.48"
+    "jspm": "^0.16.48",
+    "mocha": "^3.2.0"
   }
 }
