@@ -2,14 +2,18 @@
  * Created by danieldihardja on 03/01/17.
  */
 
-// TODO:
-// find a workaround to load es6 modules
-// import contentDb from '../../src/components/services/content-db';
+import chai from 'chai';
+import {$contentDB} from 'project/components/services/content-db';
+
+var assert = chai.assert;
 
 describe('demo', function() {
     describe('test1', function() {
         it('should pass', function(done) {
-            done();
+            $contentDB.contentStartPage().then(function(res) {
+                assert.equal(res.title, 'welcome');
+                done();
+            });
         })
     });
 });

@@ -22,6 +22,10 @@ class ContentDbService {
         return this.isReady;
     }
 
+    contentStartPage() {
+        return Promise.resolve({title: 'welcome'});
+    }
+
     sync() {
         return Promise.resolve();
     }

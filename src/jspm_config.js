@@ -9,6 +9,7 @@ System.config({
     ]
   },
   paths: {
+    "project/*": "*",
     "npm:*": "jspm_packages/npm/*",
     "github:*": "jspm_packages/github/*"
   },
@@ -17,6 +18,7 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bluebird": "npm:bluebird@3.4.7",
+    "chai": "npm:chai@3.5.0",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.32",
     "jsx": "github:floatdrop/plugin-jsx@1.2.1",
@@ -194,6 +196,14 @@ System.config({
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:chai@3.5.0": {
+      "assertion-error": "npm:assertion-error@1.0.2",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "deep-eql": "npm:deep-eql@0.1.3",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2",
+      "type-detect": "npm:type-detect@1.0.0"
+    },
     "npm:cipher-base@1.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "inherits": "npm:inherits@2.0.1",
@@ -275,6 +285,10 @@ System.config({
       "public-encrypt": "npm:public-encrypt@4.0.0",
       "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:deep-eql@0.1.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "type-detect": "npm:type-detect@0.1.1"
     },
     "npm:des.js@1.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
