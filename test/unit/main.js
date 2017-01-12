@@ -3,11 +3,10 @@
  */
 var System = require('jspm');
 
-
 /**
- * Solution to test es6 modules with JSPM in node ( mocha )
+ * Solution to test es6 modules in mocha with jspm dependencies
  */
-System.import('./test/unit/demo.test')
+System.import('./test/unit/all.test')
     .then((res) => {
         run();
     })
