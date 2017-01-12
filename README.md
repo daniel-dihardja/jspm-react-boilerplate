@@ -41,5 +41,11 @@ The bundled version can then be integrated in either a cordova or an electron ap
 #Styling
 
 #Test
+###Unit Tests
+
+
+    make unit-tests
 
 #Issues
+
+#Links

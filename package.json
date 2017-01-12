@@ -31,9 +31,6 @@
       }
     }
   },
-  "scripts": {
-    "test": "mocha --delay test/unit/main.js"
-  },
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "jspm": "^0.16.48",

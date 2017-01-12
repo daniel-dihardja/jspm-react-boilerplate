@@ -11,3 +11,6 @@ copy-index:
 
 copy-assets:
 	cp -r ./src/assets ./bundle/assets
+
+unit-tests:
+	mocha --delay test/unit/main.js
