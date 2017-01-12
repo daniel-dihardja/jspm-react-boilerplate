@@ -3,6 +3,10 @@
  */
 var System = require('jspm');
 System.import('./test/unit/demo.test')
-    .then(function(res) {
+    .then((res) => {
+        run();
+    })
+    .catch((err) => {
+        console.log(err);
         run();
     });
