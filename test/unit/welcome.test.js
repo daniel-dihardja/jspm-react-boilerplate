@@ -9,7 +9,7 @@ var assert = chai.assert;
 
 describe('welcome', () => {
     it('content', (done) =>{
-        $contentDB.contentStartPage().then((res) => {
+        $contentDB.contentWelcome().then((res) => {
             assert.equal(res.title, 'welcome');
             done();
         });

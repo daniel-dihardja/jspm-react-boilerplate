@@ -22,7 +22,7 @@ class ContentDbService {
         return this.isReady;
     }
 
-    contentStartPage() {
+    contentWelcome() {
         return Promise.resolve({title: 'welcome'});
     }
 
